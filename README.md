@@ -17,6 +17,7 @@ These step-by-step guides show you exactly how to handle common medical tasks:
 | **Clinical Routines** | [🩺 Daily Clinical Workflows](docs/cookbooks/clinical-workflows.md) |
 | **Full System Manual** | [📖 Detailed User Manual](docs/cookbooks/manual.md) |
 | **Windows Setup** | [🚀 Simple Setup Guide](docs/cookbooks/setup-guide.md) |
+| **Secure Access** | [🔑 SSH Security Key Setup](docs/cookbooks/ssh-setup.md) |
 | **Cloud Setup** | [☁️ Kaggle GPU Setup Guide](docs/cookbooks/kaggle-setup.md) |
 
 ---

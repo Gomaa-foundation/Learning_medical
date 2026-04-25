@@ -24,6 +24,8 @@ This allows you to sync your medical knowledge with the secure "Gomaa Foundation
     -   Select **"URL"** and paste this: `https://github.com/Gomaa-foundation/Learning_medical.git`
     -   Choose where you want to save it on your computer and click **"Clone"**.
 
+4.  **Optional (Recommended)**: Set up [Secure Access (SSH)](ssh-setup.md) to avoid typing your password during syncs.
+
 ---
 
 ## 3. Install System Dependencies
