@@ -14,7 +14,7 @@ Welcome! Setting up your clinical environment is designed to be quick and easy. 
 
 1.  **Clone the System**:
     ```bash
-    git clone git@github.com:m-amir-gomaa/Learning_medical.git ~/Learning_medical
+    git clone git@github.com:Gomaa-foundation/Learning_medical.git ~/Learning_medical
     ```
 2.  **Install Requirements**:
     ```bash
