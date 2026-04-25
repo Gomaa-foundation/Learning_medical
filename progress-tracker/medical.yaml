@@ -1,34 +1,19 @@
 curriculum:
   - phase: 1
-    title: "Foundational Sciences"
-    source: "First Aid for USMLE Step 1"
-    status: "In Progress"
-    focus: "Pathology & Pharmacology"
-  - phase: 2
-    title: "Organ Systems Integration"
-    source: "Pathoma & UWorld"
-    status: "Pending"
+    title: "Oncology Mastery: Tumor Research"
+    source: "1100-Page Research Collection"
+    status: "Active"
+    focus: "General Tumor Principles & Genetic Markers"
 resources:
-  - id: "fa2024"
-    title: "First Aid for the USMLE Step 1 2024"
-    role: "Primary Textbook"
-  - id: "pathoma"
-    title: "Pathoma: Fundamentals of Pathology"
-    role: "Video/Notes Reference"
+  - id: "oncology-book"
+    title: "Oncology Research: 1100-Page Collection"
+    role: "Primary Research Material"
 skills:
-  Pathology:
-    p_mastery: 0.15
-    stability: 2.0
-    last_review: 2026-04-20
-  Pharmacology:
-    p_mastery: 0.10
-    stability: 1.5
-    last_review: 2026-04-22
-  Physiology:
-    p_mastery: 0.25
-    stability: 5.0
-    last_review: 2026-04-15
-  Anatomy:
-    p_mastery: 0.05
+  Oncology:
+    p_mastery: 0.0
     stability: 1.0
-    last_review: 2026-04-24
+    last_review: 2026-04-25
+  Tumor_Pathology:
+    p_mastery: 0.0
+    stability: 1.0
+    last_review: 2026-04-25
