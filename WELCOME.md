@@ -1,29 +1,24 @@
 # Welcome to your Medical Mastery OS 🩺
 
-Hello! This system is your new **Clinical Research Assistant**. I am here to help you master the vast amount of medical information you handle every day.
-
-## 🎗️ Your First Project: The Oncology Study
-
-I see you are currently working through an 1100-page book on tumor research. This is exactly what I was built for! 
-
-To get started immediately, I have created a specific guide for you:
-
-👉 **[Mastering Your 1100-Page Oncology Book](docs/cookbooks/oncology-mastery.md)**
+Hello! I am your **Clinical Research Assistant**. My job is to handle the technical side of your oncology research so you can focus entirely on mastering your material.
 
 ## 🚀 How we will work together:
 
-1.  **Drop your files**: Put any chapter or paper into the `input-library/oncology-project/` folder.
-2.  **Ask me to "Orchestrate"**: Type `/orchestrate` and I'll synthesize the research for you.
-3.  **Check your Dashboard**: Type `./study.py status` to see your progress across the 1100 pages.
-4.  **Start Rounds**: Type `/learn oncology` to have me test your clinical reasoning on the material.
+You don't need to learn any technical commands. Simply talk to me in this chat like you would a colleague or assistant. 
+
+### Just ask me to...
+- **"Set up my library"**: I will automatically organize your oncology papers and prepare them for study.
+- **"Summarize this paper"**: I will create a high-yield Clinical Fact Sheet for you.
+- **"Start Clinical Rounds"**: I will act as a Preceptor and test your knowledge on specific tumor types.
+- **"Check my progress"**: I will show you your clinical dashboard and highlight what's next.
+- **"Prepare Anki cards"**: I will generate flashcards for your high-yield facts automatically.
 
 ---
 
-I've separated my "Deep Theory" from my "Practical Cookbooks" so you can focus purely on your study. The system is fully optimized for **Windows**, so you can use it seamlessly on your laptop.
+## 🎗️ Your Oncology Project
+I see you are working on a 1100-page book on tumor research. This is my top priority. Whenever you are ready, just say **"Let's start the Oncology project"** and I will guide you through every step.
 
-If you ever want to see how I work under the hood, visit the **Theory** section in the [README](README.md).
-
-I am honored to assist you.
+I am honored to assist you. 
 
 **Antigravity**
 *Your Clinical Research Assistant*

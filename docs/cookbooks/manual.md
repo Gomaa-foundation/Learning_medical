@@ -6,31 +6,22 @@ This manual explains how to use the Medical Mastery OS to turn medical literatur
 
 ---
 
-## 🕹️ 1. Clinical Commands
+## 🕹️ 1. Working with Your Assistant
 
-Interact with Antigravity using these commands to manage your medical education.
+You don't need to memorize commands. Simply ask me in the chat, and I will execute the necessary logic for you. 
 
-| Command | Action | Clinical Context |
+| What you want | What to say to me | What I will do |
 |---|---|---|
-| `/intel` | Daily clinical intelligence brief. | Review USPSTF guidelines, CDC updates, and new research. |
-| `/audit` | Check your medical knowledge base for accuracy. | Ensure your "Fact Sheets" align with the latest clinical standards. |
-| `/extract <file>` | Prepare a medical document for study. | Process a PDF chapter, journal article, or case report. |
-| `/summarize <name>` | Create a "Clinical Fact Sheet." | Synthesize pathology, pharmacology, or physical exam findings. |
-| `/learn <name>` | Start a Preceptor-led tutoring session. | Deep dive into a disease process or organ system. |
-| `/review` | High-yield clinical review. | Smart spaced repetition for board-relevant facts. |
-| `/orchestrate` | Process your incoming medical library. | Automatically organize and summarize your new medical files. |
+| **Daily Intelligence** | "Give me my daily brief." | I'll run `/intel` and give you the latest medical news. |
+| **Organize Library** | "Process my new papers." | I'll run `/orchestrate` to synthesize your new files. |
+| **Start Rounds** | "Let's study Oncology." | I'll run `/learn` and act as your clinical preceptor. |
+| **Review Facts** | "Let's do a quick review." | I'll run `/review` to test your clinical retention. |
 
 ---
 
-## 🖥️ 2. The Clinical Dashboard (CLI)
+## 🖥️ 2. The Clinical Dashboard
 
-Use the unified CLI tool for system control and progress tracking.
-
-| Command | Action |
-|---|---|
-| `./study.py status` | **Medical Dashboard**: View mastery levels, board prep progress, and clinical hours. |
-| `./study.py doctor` | **System Health**: Check directory structure and clinical config integrity. |
-| `./study.py sync` | **Knowledge Sync**: Securely backup your clinical knowledge base to the Git Atlas. |
+You can ask me to **"Show my dashboard"** at any time. I will run the `./study.py` tool for you and present the results in the chat.
 
 ---
 
