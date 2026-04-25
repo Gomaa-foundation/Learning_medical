@@ -19,7 +19,9 @@ To get started immediately, I have created a specific guide for you:
 
 ---
 
-I've separated my "Deep Theory" from my "Practical Cookbooks" so you can focus purely on your study. If you ever want to see how I work under the hood, visit the **Theory** section in the [README](README.md).
+I've separated my "Deep Theory" from my "Practical Cookbooks" so you can focus purely on your study. The system is fully optimized for **Windows**, so you can use it seamlessly on your laptop.
+
+If you ever want to see how I work under the hood, visit the **Theory** section in the [README](README.md).
 
 I am honored to assist you.
 
