@@ -43,8 +43,17 @@ Use the unified CLI tool for system control and progress tracking.
 5.  **Daily Review**: Use `/review` to maintain long-term retention of critical medical facts.
 
 ---
-
-## 📚 4. Clinical Knowledge Map
++
++## 🗺️ 4. Visual Logic & Maps
++
++If you want to see exactly how the system processes your clinical data (Mermaid diagrams and detailed workflow steps), visit the:
++
++👉 [**Clinical Process Map**](COMMAND_ATLAS.md)
++
+ ---
+ 
+-## 📚 4. Clinical Knowledge Map
++## 📚 5. Clinical Knowledge Map
 
 | Folder | Clinical Content |
 |---|---|

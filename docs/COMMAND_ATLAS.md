@@ -1,120 +1,100 @@
-# 🗺️ Master Command & Logic Atlas (v0.1.0)
+# 🗺️ Clinical Process Map (v0.1.0)
 
-> "To master the tool, one must first understand the machine."
+> "The practice of medicine is an art, not a trade; a calling, not a business." — William Osler
 
-This document provides a total visual and technical breakdown of every process, command, and skill within the Study System. No more guessing.
+This document provides a visual and conceptual map of how your Medical Mastery OS processes clinical knowledge. It is designed to help you understand how your literature is transformed into expertise.
 
 ---
 
-## 🏗️ 1. Global System Architecture
+## 🏗️ 1. Clinical System Architecture
 
-This diagram shows how the AI Assistant (Antigravity), the CLI Center, and the Filesystem interact to manage your knowledge.
+This diagram shows how your Clinical Research Assistant (Antigravity), the Dashboard, and your Medical Library interact.
 
 ```mermaid
 graph TD
-    User((USER)) -- "Slash Commands" --> AG[Antigravity AI]
-    User -- "CLI Commands" --> CLI[study.py CLI]
+    User((Medical Professional)) -- "Clinical Commands" --> AG[Antigravity AI]
+    User -- "Dashboard View" --> CLI[Clinical Dashboard]
     
     subgraph "The Intelligence"
-        AG -- "Reads Instructions" --> CMDs[system/commands/*.md]
-        AG -- "Process Data" --> KB[(knowledge-base/)]
+        AG -- "Analyzes Research" --> CMDs[system/commands/*.md]
+        AG -- "Synthesizes Notes" --> KB[(knowledge-base/)]
     end
     
     subgraph "The Operations"
-        CLI -- "Health Check" --> Doc[Study Doctor]
+        CLI -- "Clinical Health Check" --> Doc[System Doctor]
         CLI -- "Master Dashboard" --> Dash[Status View]
-        CLI -- "Git Backup" --> Atlas[Git Atlas]
+        CLI -- "Knowledge Sync" --> Atlas[Git Atlas]
     end
     
     subgraph "External Integration"
-        AG -- "GPU Extraction" --> Kaggle[Kaggle MinerU]
-        AG -- "Spaced Repetition" --> Anki[Anki Desktop]
-        AG -- "Research" --> Web[Perplexity/Search]
+        AG -- "Clinical Guidelines" --> Societies[AHA/CDC/USPSTF]
+        AG -- "Spaced Repetition" --> Memory[Retention Engine]
+        AG -- "Research" --> Journals[NEJM/JAMA/Lancet]
     end
 ```
 
 ---
 
-## 🕹️ 2. Detailed Command Registry
+## 🕹️ 2. Clinical Workflow Registry
 
-Every command here is powered by a specific instruction file. Click the link to see the "raw brain" of each skill.
+Every interaction is guided by professional medical standards. Below is the logic behind your primary tools.
 
-### 🔄 Orchestration Logic (`/orchestrate`)
+### 🔄 Clinical Orchestration (`/orchestrate`)
 **Source**: [`system/commands/orchestrate.md`](../system/commands/orchestrate.md)
 
-The "Heartbeat" of the system. It is an autonomous loop that manages your learning queue.
+The automated process that organizes your incoming medical library.
 
 ```mermaid
 flowchart TD
-    Start[User: /orchestrate] --> Scan[Scan study-plans/ for Domain]
-    Scan --> Find[Identify Pending Books]
-    Find --> Rename[Apply Sovereign Naming: kebab-case]
-    Rename --> Extract[Run /extract for raw text]
-    Extract --> Distill[Run /summarize for Fact Sheets]
-    Distill --> Map[Update Progress Tracker]
-    Map --> Repeat{More pending?}
-    Repeat -- Yes --> Find
-    Repeat -- No --> End[Success: Domain Ingested]
+    Start[User: /orchestrate] --> Scan[Scan input-library/ for new PDFs]
+    Scan --> Identify[Identify Organ System/Discipline]
+    Identify --> Extract[Extract High-Yield Concepts]
+    Extract --> Summarize[Create Clinical Fact Sheet]
+    Summarize --> Track[Update Clinical Progress]
+    Track --> Repeat{More files?}
+    Repeat -- Yes --> Scan
+    Repeat -- No --> End[Success: Library Synthesized]
 ```
 
-### 📡 Intelligence Logic (`/intel`)
+### 📡 Medical Intelligence (`/intel`)
 **Source**: [`system/commands/intel.md`](../system/commands/intel.md)
 
-A targeted research sprint designed for high-signal technical updates.
+A daily clinical brief designed to keep you updated with the latest evidence-based medicine.
 
 ```mermaid
 flowchart LR
-    Command[User: /intel] --> Params[Date: Today - Yesterday]
-    Params --> Scope[Scope: AI Tools, NixOS, Privacy]
-    Scope --> Search[Web Search: Signal Detection]
-    Search --> Filter[Filter: Remove Marketing & Noise]
-    Filter --> Opinion[Inject Expert Opinion]
-    Opinion --> Brief[Output: Actionable Briefing]
+    Command[User: /intel] --> Scope[Scope: New Guidelines & High-Yield Facts]
+    Scope --> Search[Medical Literature Search]
+    Search --> Filter[Filter: Clinical Relevance & Level of Evidence]
+    Filter --> Synthesis[Synthesize Actionable Briefing]
+    Synthesis --> Output[Output: Daily Clinical Intelligence]
 ```
 
-### 🧠 Study & Review Logic
-| Command | Source | Process |
-|---|---|---|
-| `/learn` | [`learn.md`](../system/commands/learn.md) | Socratic tutoring session based on specific chapter content. |
-| `/review` | [`review.md`](../system/commands/review.md) | FSRS-driven testing of items marked "DUE NOW" in the dashboard. |
-| `/summarize`| [`summarize.md`](../system/commands/summarize.md) | Condensing raw chapters into high-density "Fact Sheets." |
-| `/extract` | [`extract.md`](../system/commands/extract.md) | Surgical cleaning of PDF-to-Markdown garble (Math, columns, headers). |
+### 🧠 Deep Learning & Retention
+| Command | Clinical Purpose |
+|---|---|
+| `/learn` | **Clinical Rounds**: Socratic tutoring session based on case studies and pathology. |
+| `/review` | **Retention Check**: Spaced repetition for critical facts marked "Review Due." |
+| `/summarize`| **Synthesis**: Condensing dense chapters into high-density "Clinical Fact Sheets." |
+| `/extract` | **Processing**: Cleaning raw medical text for easier reading and analysis. |
 
 ---
 
-## 🧬 3. The Kaggle Foundry (Remote GPU Pipeline)
+## 🧬 3. The Evidence-Based Pipeline
 
-When you need to process a heavy PDF, the system launches a remote GPU environment to do the heavy lifting.
-
-**Process Flow:**
-1.  **Dispatch**: The system uploads your PDF to a private Kaggle Dataset.
-2.  **Kernel Launch**: A GPU script (`system/foundry/internal/kaggle-run.sh`) is pushed to run MinerU.
-3.  **Extraction**: The GPU performs layout-aware extraction, rejoining broken columns and fixing math.
-4.  **Retrieval**: The system polls for completion, pulls the clean `.md` back to your `input-library/`, and deletes the cloud evidence.
-
-```mermaid
-sequenceDiagram
-    participant PC as Your Computer
-    participant K as Kaggle API (Cloud)
-    participant G as GPU Instance (MinerU)
-    
-    PC->>K: 1. Push PDF to Dataset
-    PC->>K: 2. Launch GPU Kernel
-    K->>G: 3. Execute script.py
-    G->>G: 4. Clean PDF -> Markdown
-    G->>K: 5. Store result.tar.gz
-    PC->>K: 6. Poll status until 'Complete'
-    PC->>K: 7. Download cleaned Markdown
-    PC->>K: 8. Delete Dataset (Privacy)
-```
+When you add a document to the system, it follows a rigorous path to ensure accuracy:
+1.  **Validation**: The system identifies the medical domain (e.g., Cardiology, Renal).
+2.  **Extraction**: Key clinical findings, diagnostic criteria, and treatments are identified.
+3.  **Cross-Reference**: Concepts are linked to related organ systems or foundational sciences.
+4.  **Integration**: Notes are placed in your `knowledge-base/` and scheduled for your next review session.
 
 ---
 
-## 🛠️ 4. Skill/Command Navigation
+## 🛠️ 4. Navigation
 
-- **Internal Commands**: Stored in `system/commands/`. Use these in the Antigravity chat.
-- **Unified CLI**: Use `./study.py` in your terminal for status and health.
-- **Theory Docs**: Stored in `legacy-technical-docs/` for deep-dive research.
+- **Clinical Commands**: Type these directly into the Antigravity chat to manage your learning.
+- **Clinical Dashboard**: Use `./study.py status` in your terminal to see your progress at a glance.
+- **Medical Library**: Put all your raw documents in `input-library/`.
 
 ---
 

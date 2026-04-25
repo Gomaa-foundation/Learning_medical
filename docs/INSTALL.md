@@ -1,49 +1,55 @@
-# Installation Guide: Study System v0.1.0
+# 🚀 Getting Started with Medical Mastery OS
 
-This guide explains how to set up your environment for the Study System. While it works on any Linux system, it is optimized for a declarative environment like NixOS.
-
-## 1. Setup
-
-The Study System is designed to be lightweight and portable.
-
-1. **Antigravity**: This is the primary engine. Open this repository in Antigravity, and it will automatically read the `ANTIGRAVITY.md` file to understand how to assist you.
-2. **Dependencies**: Ensure you have `git` and `ffmpeg` installed for processing media and managing history.
-   ```bash
-   # Ubuntu/Debian
-   sudo apt update && sudo apt install -y git ffmpeg python3-pip
-   
-   # Arch Linux
-   sudo pacman -Syu git ffmpeg python-pip
-   ```
-3. **Python Libraries**: The system requires `PyYAML` and `Pydantic` for data validation.
-   ```bash
-   pip install pyyaml pydantic
-   ```
-
-## 2. External Tools
-
-### Obsidian (Visualizing Knowledge)
-1. Install [Obsidian](https://obsidian.md/).
-2. Open the `Learning/` folder as a new vault.
-3. Your knowledge will be organized inside `knowledge-base/` and `progress-tracker/`.
-
-### Anki (Flashcards)
-1. Install [Anki](https://apps.ankiweb.net/).
-2. Install the `AnkiConnect` add-on (ID: 2055492159).
-3. The Study System will automatically export cards to Anki during your study sessions.
+Welcome! Setting up your clinical environment is designed to be quick and easy. Follow these steps to begin.
 
 ---
 
-## 3. First Steps
+## 1. Prerequisites
+- **Python 3.10+**: Ensure you have a modern version of Python installed.
+- **Git**: For synchronizing your clinical knowledge base.
 
-Once installed, run the health check to ensure everything is ready:
+---
+
+## 2. Setting Up the Environment
+
+1.  **Clone the System**:
+    ```bash
+    git clone git@github.com:m-amir-gomaa/Learning_medical.git ~/Learning_medical
+    ```
+2.  **Install Requirements**:
+    ```bash
+    cd ~/Learning_medical
+    pip install -r requirements.txt
+    ```
+3.  **Initialize your Library**:
+    Ensure the `input-library/`, `knowledge-base/`, and `progress-tracker/` directories exist.
+
+---
+
+## 3. First-Run Health Check
+
+Before you start studying, run the **Clinical Doctor** to verify everything is set up correctly:
+
 ```bash
 ./study.py doctor
 ```
 
-Then, use the `/orchestrate` command in the Antigravity chat to organize your library.
+If you see all **[OK]** markers, you are ready to begin!
+
+---
+
+## 4. Your First Study Session
+
+1.  Open the Antigravity chat.
+2.  Type `/intel` to receive your first medical briefing.
+3.  Type `./study.py status` to see your fresh clinical dashboard.
+
+---
+
+## 🆘 Need Help?
+If you encounter any issues, please refer to the [User Manual](USER_MANUAL.md) or contact the system administrator.
 
 ---
 
 **Navigation**
-[⬅️ Previous: Home](../README.md) | [🏠 Home](../README.md) | [Next: Usage & Workflow ➡️](USAGE.md)
+[🏠 Home](../README.md) | [📖 User Manual](USER_MANUAL.md)

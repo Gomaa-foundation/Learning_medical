@@ -1,72 +1,55 @@
-# Anki Flashcards: Professional Mastery
+# 🧠 Medical Spaced Repetition: The Science of Retention
 
-This document explains how to use the automated flashcard system to master information quickly and efficiently.
+> "He who studies medicine without books sails an uncharted sea, but he who studies medicine without patients does not go to sea at all." — William Osler
 
-## 1. Automated Generation
-
-The Study System automatically identifies important facts and rules during your study sessions and prepares them for Anki.
-
-- **Storage**: Generated cards are stored in `srs/german-sovereign.csv`.
-- **Logic**: The system focuses on **Logic Anchors**—rules and structures that help you build new sentences, rather than just memorizing lists of words.
+In medical education, the volume of information is immense. To ensure that high-yield clinical facts are available when you need them—at the bedside or during an exam—this system uses the science of **Spaced Repetition**.
 
 ---
 
-## 2. Professional Styling (Dark Mode)
+## 🔬 1. The Forgetting Curve
 
-To make your study sessions as pleasant as possible, use this clean, professional CSS in your Anki **Card Styling**.
+Medical knowledge decays over time if not reviewed. Spaced repetition works by scheduling reviews just as you are about to forget a concept, effectively "resetting" your memory and making the knowledge more permanent.
 
-### CSS Template
-```css
-.card {
-  font-family: "Inter", "Roboto", "Segoe UI", sans-serif;
-  font-size: 22px;
-  text-align: center;
-  color: #e0e0e0;
-  background-color: #121212;
-  line-height: 1.6;
-  padding: 2em;
-}
-
-/* Question Styling */
-b, strong {
-  color: #03dac6; /* Teal for emphasis */
-}
-
-/* Cloze Deletion Styling */
-.cloze {
-  font-weight: bold;
-  color: #bb86fc; /* Soft Purple for logic anchors */
-}
-
-/* Tags Styling */
-.tags {
-  font-size: 14px;
-  color: #555;
-  margin-top: 20px;
-  font-style: italic;
-}
+```mermaid
+graph LR
+    Initial[Initial Learning] --> Decay[Memory Decay]
+    Decay --> Review1[Review #1: 1 Day]
+    Review1 --> Decay2[Slower Decay]
+    Decay2 --> Review2[Review #2: 4 Days]
+    Review2 --> Decay3[Much Slower Decay]
+    Decay3 --> Review3[Review #3: 14 Days]
+    Review3 --> Mastery[Permanent Clinical Knowledge]
 ```
 
 ---
 
-## 3. How to Import
+## 🛠️ 2. How the System Tracks Mastery
 
-1. **Locate the File**: Open `srs/german-sovereign.csv`.
-2. **Open Anki**: Click **Import File**.
-3. **Select File**: Choose the `.csv` file.
-4. **Settings**:
-   - **Type**: Select "Basic" or "Cloze".
-   - **Fields**: Map the columns to Front, Back, and Tags.
-   - **Allow HTML**: Ensure this is checked.
-5. **Import**: Your study material is now synced to your mobile device or computer.
+The system monitors your performance during `/review` sessions and `/learn` rounds. It uses a mathematical model to calculate:
+
+1.  **Stability**: How long a medical fact is likely to stay in your memory.
+2.  **Mastery Level**: A percentage representing your confidence and accuracy with a topic.
+3.  **Next Review Date**: The optimal time to test you again.
 
 ---
 
-## 💡 Mastery Tip
+## 🩺 3. Clinical Application
 
-If a card takes more than **3 seconds** to answer, it is too complex. Break it down into smaller pieces. The goal is to make your knowledge as fast and automatic as a motor skill.
+Your **Clinical Dashboard** (`./study.py status`) shows your current mastery across different medical domains. 
+
+- **Green (Mastered)**: These concepts are stable.
+- **Yellow (Reviewing)**: You are actively strengthening these memories.
+- **Red (Review Due)**: These facts are at risk of being forgotten. **Prioritize these sessions.**
+
+---
+
+## 🚀 4. Best Practices for Medical Students
+
+*   **Active Recall**: When prompted during a review, try to explain the *pathophysiology* out loud before looking at the answer.
+*   **Consistency**: A 10-minute review every morning is more effective than a 5-hour "cram" session once a week.
+*   **Case Integration**: Try to relate every fact sheet to a patient you have seen or a clinical vignette you have read.
 
 ---
 
 **Navigation**
-[⬅️ Previous: User Manual](../docs/USER_MANUAL.md) | [🏠 Home](../README.md)
+[⬅️ Previous: Clinical Process Map](COMMAND_ATLAS.md) | [🏠 Home](../README.md)

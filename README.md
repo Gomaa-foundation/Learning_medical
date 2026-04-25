@@ -43,6 +43,20 @@ A professional, automated system for medical professionals and students to maste
 | **USMLE Step 1/2/3** | Comprehensive tracks for board certification. |
 | **Clinical Rotations** | Rapid preparation for hospital rounds and shelf exams. |
 | **CME / Research** | Stay updated with the latest clinical guidelines. |
+| **Philosophy** | The art and ethics of medical practice. |
+
+---
+
+## 📚 Full Clinical Documentation
+
+| Document | Purpose |
+|-----|---------|
+| [User Manual](docs/USER_MANUAL.md) | Comprehensive guide on using the system. |
+| [Clinical Process Map](docs/COMMAND_ATLAS.md) | **Visual diagrams of all medical workflows.** |
+| [Clinical Workflows](docs/USAGE.md) | Recommended study routines for professionals. |
+| [Science of Retention](docs/SRS.md) | How Spaced Repetition masters the "Forgetting Curve." |
+| [Research Ethics](docs/RESEARCHER.md) | Evidence-Based Medicine (EBM) standards. |
+| [Privacy & Security](docs/SECURITY.md) | How we protect your clinical data. |
 
 ---
 

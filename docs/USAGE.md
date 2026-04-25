@@ -1,60 +1,52 @@
-# Usage & Workflow Guide: Study System v0.1.0
+# 🩺 Clinical Workflows: How to Master Medicine
 
-This guide explains how to use the Study System to master new subjects and track your career progress.
-
-## 1. The Study Cycle
-
-The system works in a simple four-step loop:
-
-1. **Orchestrate**: Put new files in `input-library/` and use `/orchestrate` to organize them.
-2. **Summarize**: Use `/summarize <name>` to create easy-to-read Fact Sheets in your `knowledge-base/`.
-3. **Learn**: Use `/learn <name>` to start a tutoring session. Antigravity will explain concepts and test your understanding.
-4. **Review**: Use `/review` daily. The system uses a smart schedule to test you on things you are about to forget.
+This guide outlines the most effective workflows for using the Medical Mastery OS in a high-pressure clinical or academic environment.
 
 ---
 
-## 2. Your Daily Routine
+## 📅 Workflow 1: The Daily Clinical Brief
+*Best for: Staying updated with minimal time commitment.*
 
-A "Perfect" study day looks like this:
-
-1. **Check Status**: Run `./study.py status` to see what is due for review and your current career day.
-2. **Review**: Use the `/review` command to clear your "DUE NOW" items.
-3. **New Learning**: Use `/learn` on a new chapter or topic from your `study-plans/`.
-4. **Sync**: Run `./study.py sync` to save all your progress to the Git Atlas.
+1.  **Start your day**: Open the system and type `/intel`.
+2.  **Review the brief**: Read the "High-Yield Fact of the Day" and any society guideline updates.
+3.  **Check your Dashboard**: Type `./study.py status` to see if any critical reviews are due.
 
 ---
 
-## 3. Command Reference
+## 📚 Workflow 2: Literature Synthesis
+*Best for: Turning new journals or textbook chapters into permanent knowledge.*
 
-### 🛠️ Organization Tools
-| Command | Purpose | When to use |
-|---|---|---|
-| `/orchestrate` | Organizes your library. | When you add new PDFs or notes. |
-| `/extract <file>` | Cleans up a raw document. | For messy text or large files. |
-| `/summarize <name>` | Creates a Fact Sheet. | When you want a clear summary to study from. |
-
-### 🧠 Learning Tools
-| Command | Purpose | When to use |
-|---|---|---|
-| `/learn <topic>` | Guided study session. | When mastering a specific subject. |
-| `/review` | Smart review session. | Every day to keep knowledge fresh. |
-| `/find-related` | Finds connections. | When you're stuck and need a simpler explanation. |
-
-### 📡 Intelligence Tools
-| Command | Purpose | When to use |
-|---|---|---|
-| `/intel` | Daily news summary. | To keep up with your field of interest. |
-| `/catchup` | Multi-day lookback. | After a break or weekend. |
+1.  **Add your file**: Drop a PDF (e.g., *NEJM article*) into `input-library/`.
+2.  **Synthesize**: Type `/orchestrate` to have the system process the file.
+3.  **Review the Fact Sheet**: Open the newly created note in `knowledge-base/` to ensure you understand the key points.
+4.  **Confirm Mastery**: The system will automatically schedule a review for this topic.
 
 ---
 
-## 💡 4. Pro Tips
+## 🏥 Workflow 3: Preceptor Rounds
+*Best for: Deep-diving into a complex pathology or preparing for a clinical rotation.*
 
-- **Use the Dashboard**: Always start your day with `./study.py status`. It tells you exactly what needs your attention.
-- **Trust the Assistant**: If a file is messy or the formatting looks wrong, just tell Antigravity: *"Fix the formatting in this chapter."* It will handle the details for you.
-- **Stay Consistent**: The "Current Day" counter in your career dashboard is a great way to stay motivated. Try to keep your streak alive!
+1.  **Initiate Rounds**: Type `/learn <topic>` (e.g., `/learn cardiology`).
+2.  **Engage in the Socratic Method**: Answer the preceptor's case-based questions.
+3.  **Refine Clinical Reasoning**: Use the feedback provided to sharpen your differential diagnosis (DDx) and management plans.
+
+---
+
+## 🧠 Workflow 4: The Board Prep Sprint
+*Best for: Intense USMLE or Shelf Exam preparation.*
+
+1.  **Load the Plan**: Visit `study-plans/medical-boards/` and choose your track.
+2.  **Focus on Weak Areas**: Use the Clinical Dashboard to identify organ systems with low mastery percentages.
+3.  **Review Sessions**: Perform multiple `/review` sessions focused on those specific weak areas.
+
+---
+
+## 🛠️ Tips for Success
+-   **Always Use Medical Slugs**: When creating new notes, use simple names like `atrial-fibrillation` or `type-2-diabetes`.
+-   **Link Your Notes**: If you find a connection between a drug (Pharmacology) and a disease (Pathology), mention it in your notes to create a "Neural Mesh" of knowledge.
+-   **Keep it Clinical**: Focus on facts that change patient outcomes or appear on exams.
 
 ---
 
 **Navigation**
-[⬅️ Previous: Installation Guide](INSTALL.md) | [🏠 Home](../README.md) | [Next: Research Guide ➡️](RESEARCHER.md)
+[📖 User Manual](USER_MANUAL.md) | [🏠 Home](../README.md)

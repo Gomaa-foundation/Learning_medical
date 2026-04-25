@@ -1,55 +1,42 @@
-# 🔬 Intelligence & Research Commands
+# 🔬 Clinical Research Ethics & Methodology
 
-> **Status**: Active · v0.1.0 · April 2026  
-> **Location**: `system/commands/`  
-
-The intelligence gathering modules are built as **native slash commands**. They encode the formatting rules and your user profile, and they dynamically inject the current date into the research process.
-
-## The Commands
-
-Inside the Antigravity chat, simply type:
-
-| Command | Purpose |
-|---|---|
-| `/intel` | **The Daily Morning Routine.** Searches for tool releases, tech ecosystem moves, and signals since yesterday. Filters out noise and fluff. |
-| `/business-brief` | **Strategic Intelligence.** Tracks company moves, pricing changes, and acquisitions relevant to remote professionals. |
-| `/catchup` | **Multi-Day Lookback.** A prioritized 3-day summary for when you've been offline. |
-| `/deep-dive <topic>` | **Targeted Sprint.** A comprehensive breakdown of a single topic, outlining the current state of the art and key players. |
+The Medical Mastery OS is built on the foundation of **Evidence-Based Medicine (EBM)**. This document outlines the standards for incorporating research into your knowledge base.
 
 ---
 
-## How it Works
+## 1. Hierarchy of Evidence
 
-The Study System uses **Project Memory** to ensure your assistant always knows your goals:
-
-1. **`ANTIGRAVITY.md`**: This file tells your assistant who you are and how you prefer information formatted.
-2. **`system/commands/*.md`**: These files store the logic for each command. By typing `/intel`, you are giving your assistant a highly-tuned set of instructions.
-3. **Execution**: The assistant reads the command, uses its web search capabilities to find the latest info, and returns a formatted brief directly in the chat.
-
----
-
-## Modifying the Briefs
-
-If you want to track a new technology or exclude a topic:
-
-1. Ask Antigravity to edit the command file (e.g., `system/commands/intel.md`).
-2. Add your topic to the `Research Scope` section or the `Exclusions` list.
-3. Save the file. The next time you run the command, your changes will be active.
+When synthesizing new information into your system, prioritize sources according to the EBM pyramid:
+1.  **Meta-Analyses & Systematic Reviews**: The gold standard for clinical decision-making.
+2.  **Randomized Controlled Trials (RCTs)**: High-quality primary research.
+3.  **Cohort Studies**: Useful for understanding disease progression and risk factors.
+4.  **Case Reports**: Valuable for rare presentations or initial signaling.
 
 ---
 
-## Daily Routine Integration
+## 2. Source Credibility
 
-The intelligence briefings are Step 1 of your daily routine — establishing context before you focus on your specific studies:
+The system automatically prioritizes high-impact medical journals and recognized clinical guidelines:
+- **Major Journals**: NEJM, Lancet, JAMA, BMJ.
+- **Guideline Bodies**: CDC, AHA, ACC, USPSTF, AAFP.
 
-```text
-1. Status: ./study.py status      → Check your mastery and dashboard
-2. Intel: /intel                  → Start the day with a tech brief
-3. Orchestrate: /orchestrate      → Process any new files in your library
-4. Learn: /learn <topic>          → Master a specific subject
-```
+---
+
+## 3. Critical Appraisal
+
+When using the `/extract` or `/summarize` commands, the system is designed to look for:
+- **PICO Criteria**: Patient/Population, Intervention, Comparison, Outcome.
+- **Statistical Significance**: $p$-values and confidence intervals.
+- **Clinical vs. Statistical Significance**: Focusing on results that actually impact patient care.
+
+---
+
+## 4. Academic Integrity
+
+- **Citations**: Always maintain references to the original literature in your "Fact Sheets."
+- **Transparency**: If a topic is controversial or has conflicting guidelines, the system will note the discrepancy.
 
 ---
 
 **Navigation**
-[⬅️ Previous: Usage & Workflow](USAGE.md) | [🏠 Home](../README.md) | [Next: Security Protocol ➡️](SECURITY.md)
+[🏠 Home](../README.md) | [📖 User Manual](USER_MANUAL.md)

@@ -1,23 +1,42 @@
-# Security & Privacy: Study System
+# 🔒 Clinical Data Integrity & Privacy
 
-The Study System is your personal workspace. It contains your private notes, study progress, and goals. Protecting this information is important.
-
-## 1. Data Privacy
-- **Local First**: All your Fact Sheets and progress trackers are stored as plain text (YAML/JSON) on your own computer.
-- **Git Backups**: The system is configured to back up your knowledge and progress to Git, but it ignores raw sources and large media files to keep your data private and the repository light.
-
-## 2. Privacy with AI
-- **Information Flow**: When you use AI commands, the text of the document you are studying is shared with the AI provider (like Google or Anthropic).
-- **Privacy Mode**: If you require absolute privacy, you can use local AI models (via Ollama or similar tools). This ensures that your studies never leave your hardware.
-
-## 3. Data Safety
-- **Manual Cleaning**: Use the `/extract` command to remove any personal information from a document before you start summarizing it.
-- **Secure Storage**: Since all your data is in the `Learning/` folder, you can use standard disk encryption tools to keep it safe if your computer is lost.
-
-## 4. Secret Management
-- **API Keys**: Never share your API keys or commit them to Git.
-- **Environment Variables**: Use a `.env` file or your computer's environment variables to store your keys safely. The system's `.gitignore` is set up to protect these files automatically.
+This document outlines the security protocols used to protect your clinical knowledge base and ensure the privacy of your study data.
 
 ---
+
+## 1. Local-First Privacy
+
+Your Medical Mastery OS is a **local-first** application. This means:
+- Your textbooks, notes, and research remain on your hardware.
+- No third-party clouds are used for primary storage of your clinical library.
+
+---
+
+## 2. The Git Atlas Audit Trail
+
+Every change to your clinical knowledge is tracked using a version control system called the **Git Atlas**.
+- **Version History**: You can revert any accidental deletion of clinical notes.
+- **Auditability**: A clear log of when and how your knowledge base was updated.
+- **Encrypted Backups**: If you choose to sync your Atlas, ensure you use encrypted SSH keys.
+
+---
+
+## 3. Patient Privacy (HIPAA Alignment)
+
+**IMPORTANT**: While this system is designed for medical *education*, you should never store identifiable patient information (PHI) in the `input-library/` or `knowledge-base/`. 
+- Always de-identify case studies before processing.
+- Focus on the *pathology* and *clinical patterns*, not the individual patient details.
+
+---
+
+## 4. System Integrity
+
+The **Clinical Doctor** (`./study.py doctor`) performs regular checks to ensure:
+- File permissions are correct.
+- Configuration files have not been tampered with.
+- The encryption/backup layer is functional.
+
+---
+
 **Navigation**
-[⬅️ Previous: Research Guide](../docs/RESEARCHER.md) | [🏠 Home](../README.md) | [Next: Unified CLI ➡️](../study.py)
+[🏠 Home](../README.md) | [📖 User Manual](USER_MANUAL.md)
