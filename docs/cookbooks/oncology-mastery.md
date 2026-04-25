@@ -9,7 +9,8 @@ This guide is designed specifically for your current project: mastering the 1100
 ### Step 1: Preparation (The "Scan")
 Don't try to process all 1100 pages at once.
 1.  **Divide the Book**: Identify the major sections (e.g., *Lung Tumors*, *Immunotherapy*, *Genetic Markers*).
-2.  **Upload to Library**: Put the PDF (or specific chapters) into the `input-library/oncology-project/` folder.
+2.  **Cloud Setup**: Ensure you have completed the [Kaggle GPU Setup](kaggle-setup.md) so I can process the large file.
+3.  **Upload to Library**: Put the PDF (or specific chapters) into the `input-library/oncology-project/` folder.
 
 ### Step 2: Synthesis (The "Fact Sheet")
 Use the system to turn dense research papers into high-yield notes.

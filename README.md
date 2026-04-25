@@ -16,6 +16,7 @@ These step-by-step guides show you exactly how to handle common medical tasks:
 | **Mastering Large Textbooks** | [🎗️ Oncology Project Guide](docs/cookbooks/oncology-mastery.md) |
 | **Clinical Routines** | [🩺 Daily Clinical Workflows](docs/cookbooks/clinical-workflows.md) |
 | **Full System Manual** | [📖 Detailed User Manual](docs/cookbooks/manual.md) |
+| **Cloud Setup** | [☁️ Kaggle GPU Setup Guide](docs/cookbooks/kaggle-setup.md) |
 | **First-Time Setup** | [🚀 Simple Setup Guide](docs/cookbooks/setup-guide.md) |
 
 ---
