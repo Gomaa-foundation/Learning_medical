@@ -1,0 +1,15 @@
+{
+  "id": "adriancoleian/german-curriculum-cleaning-merging",
+  "title": "German Curriculum Cleaning & Merging",
+  "code_file": "german_merge_logic.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "adriancoleian/sovereign-german-distillations"
+  ],
+  "kernel_sources": [],
+  "competition_sources": []
+}

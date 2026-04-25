@@ -1,0 +1,75 @@
+wing: learning
+rooms:
+- name: state
+  description: Files from state/
+  keywords:
+  - state
+  - state
+- name: scripts
+  description: Files from scripts/
+  keywords:
+  - scripts
+  - scripts
+- name: study-plans
+  description: Files from study-plans/
+  keywords:
+  - study-plans
+  - study-plans
+- name: theory
+  description: Files from legacy-technical-docs/
+  keywords:
+  - theory
+  - theory
+- name: book_pipeline
+  description: Files from input-library/
+  keywords:
+  - book_pipeline
+  - input-library
+- name: expertise_vault
+  description: Files from progress-tracker/
+  keywords:
+  - expertise_vault
+  - progress-tracker
+- name: system
+  description: Files from system/
+  keywords:
+  - system
+  - system
+- name: logs
+  description: Files from logs/
+  keywords:
+  - logs
+  - logs
+- name: configuration
+  description: Files from config/
+  keywords:
+  - configuration
+  - config
+- name: notebooks
+  description: Files from notebooks/
+  keywords:
+  - notebooks
+  - notebooks
+- name: bin
+  description: Files from bin/
+  keywords:
+  - bin
+  - bin
+- name: documentation
+  description: Files from docs/
+  keywords:
+  - documentation
+  - docs
+- name: ckd_vault
+  description: Files from knowledge-base/
+  keywords:
+  - ckd_vault
+  - knowledge-base
+- name: research
+  description: Files from research/
+  keywords:
+  - research
+  - research
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []

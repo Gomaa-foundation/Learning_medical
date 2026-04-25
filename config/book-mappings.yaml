@@ -1,0 +1,22 @@
+# config/book-mappings.yaml
+# Dictionary of Curriculum-Source to Book-Slug mappings.
+# Use this to override fuzzy matching for specific titles.
+
+mappings:
+  "Velleman": "how-to-prove-it"
+  "Spivak": "spivak-calculus"
+  "Rudin": "principles-of-mathematical-analysis"
+  "Axler": "linear-algebra-done-right"
+  "Munkres": "munkres-topology"
+  "Big Rudin": "real-and-complex-analysis"
+  "Kandel": "principles-of-neural-science"
+  "Marr": "vision-david-marr"
+  "Anderson": "architecture-of-cognition"
+  "Baddeley": "working-memory-thought-and-action"
+  "Fuster": "the-prefrontal-cortex"
+  "Dayan & Abbott": "theoretical-neuroscience"
+  "CLRS": "introduction-to-algorithms"
+  "Knuth": "art-of-computer-programming-vol-1"
+  "Evans": "evans"
+  "Munkres (Topology)": "munkres-topology"
+  "Spivak (Calculus)": "spivak-calculus"

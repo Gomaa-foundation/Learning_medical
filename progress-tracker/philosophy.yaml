@@ -1,0 +1,25 @@
+skills:
+  phil_epistemology:
+    p_mastery: 0.1
+    difficulty: 5.0
+    stability: 2.0
+    last_review: !!null
+    due: !!null
+  phil_mind:
+    p_mastery: 0.1
+    difficulty: 5.0
+    stability: 2.0
+    last_review: !!null
+    due: !!null
+  phil_ethics:
+    p_mastery: 0.1
+    difficulty: 5.0
+    stability: 2.0
+    last_review: !!null
+    due: !!null
+  phil_logic_formal:
+    p_mastery: 0.1
+    difficulty: 5.0
+    stability: 2.0
+    last_review: !!null
+    due: !!null

@@ -1,0 +1,63 @@
+# --- STUDY SYSTEM v0.1.0 GITIGNORE ---
+
+# 1. Private Local State (Never Track)
+state/
+logs/
+tmp/
+.smart-env/
+.obsidian/
+**/workspace.json
+**/backlink.json
+**/graph.json
+.env
+.env.template
+config.json
+config_actual.json
+connections.json
+
+# 2. Heavy Binaries & Media (Keep Repo Light)
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.pdf.txt
+*.pdf.md
+*.onnx
+
+# 3. Input Library (Local Sources)
+# We ignore the raw inputs; only the summaries in knowledge-base are tracked.
+input-library/
+!input-library/**/*.yaml
+
+# 4. System & Build Junk
+__pycache__/
+.venv/
+venv/
+target/
+**/target/
+.DS_Store
+Thumbs.db
+.mcp.json
+
+# 5. Study Assets (TRACKED)
+# We explicitly allow these even if they were caught by a broader ignore
+!knowledge-base/
+!progress-tracker/
+!study-plans/
+!german-mastery/
+!python-mastery/
+
+# 6. Legacy / Junk
+adb_bruteforce.py
+bruteforce_progress.txt
+unique_151k.txt
+fleet_report.md
+sovereign_fleet_report.md
+vault-status.md

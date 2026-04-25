@@ -1,0 +1,22 @@
+pharmacology_path:
+  - category: "Autonomic Nervous System"
+    drugs:
+      - "Atropine"
+      - "Epinephrine"
+      - "Propranolol"
+      - "Bethanechol"
+    mechanism_focus: "Receptor affinities and physiological effects"
+  - category: "Cardiovascular"
+    drugs:
+      - "ACE Inhibitors"
+      - "Statins"
+      - "Digoxin"
+      - "Furosemide"
+    toxicity_focus: "Drug-drug interactions and electrolyte imbalances"
+  - category: "Antimicrobials"
+    drugs:
+      - "Penicillins"
+      - "Cephalosporins"
+      - "Fluoroquinolones"
+      - "Vancomycin"
+    resistance_focus: "Mechanisms of bacterial resistance"
